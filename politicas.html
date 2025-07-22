@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidade - Usina de Concreto Usinado Br LTDA</title>
+    <meta name="description" content="Política de Privacidade da Usina de Concreto Usinado Br LTDA - Proteção de dados pessoais em conformidade com a LGPD.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .politicas-page {
+            padding-top: 120px;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+        }
+        
+        .politicas-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .politicas-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 2rem;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .politicas-header h1 {
+            color: #1e293b;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #2563eb, #1d4ed8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .politicas-header .company-info {
+            color: #64748b;
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .politicas-header .last-update {
+            color: #94a3b8;
+            font-size: 0.9rem;
+            font-style: italic;
+        }
+        
+        .politicas-content {
+            background: white;
+            border-radius: 20px;
+            padding: 3rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+        }
+        
+        .politicas-content h2 {
+            color: #1e293b;
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin: 2rem 0 1rem 0;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #e2e8f0;
+            position: relative;
+        }
+        
+        .politicas-content h2:first-child {
+            margin-top: 0;
+        }
+        
+        .politicas-content h2::before {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 60px;
+            height: 2px;
+            background: linear-gradient(135deg, #2563eb, #1d4ed8);
+        }
+        
+        .politicas-content p {
+            color: #475569;
+            line-height: 1.8;
+            margin-bottom: 1.2rem;
+            font-size: 1rem;
+        }
+        
+        .politicas-content ul {
+            margin: 1rem 0;
+            padding-left: 1.5rem;
+        }
+        
+        .politicas-content li {
+            color: #475569;
+            line-height: 1.8;
+            margin-bottom: 0.5rem;
+            position: relative;
+        }
+        
+        .politicas-content li::marker {
+            color: #2563eb;
+        }
+        
+        .contact-info {
+            background: linear-gradient(135deg, #f1f5f9, #e2e8f0);
+            padding: 1.5rem;
+            border-radius: 15px;
+            margin: 1.5rem 0;
+            border-left: 4px solid #2563eb;
+        }
+        
+        .contact-info p {
+            margin: 0.5rem 0;
+            font-weight: 500;
+        }
+        
+        .contact-info i {
+            color: #2563eb;
+            margin-right: 0.5rem;
+            width: 20px;
+        }
+        
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: linear-gradient(135deg, #2563eb, #1d4ed8);
+            color: white;
+            text-decoration: none;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(37, 99, 235, 0.4);
+            margin-bottom: 2rem;
+        }
+        
+        .back-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(37, 99, 235, 0.6);
+            color: white;
+        }
+        
+        .back-button i {
+            transition: transform 0.3s ease;
+        }
+        
+        .back-button:hover i {
+            transform: translateX(-3px);
+        }
+        
+        .section-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 30px;
+            height: 30px;
+            background: linear-gradient(135deg, #2563eb, #1d4ed8);
+            color: white;
+            border-radius: 50%;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-right: 1rem;
+            flex-shrink: 0;
+        }
+        
+        .politicas-content h2 {
+            display: flex;
+            align-items: center;
+        }
+        
+        @media (max-width: 768px) {
+            .politicas-page {
+                padding-top: 100px;
+            }
+            
+            .politicas-header h1 {
+                font-size: 2rem;
+            }
+            
+            .politicas-content {
+                padding: 2rem 1.5rem;
+            }
+            
+            .politicas-container {
+                padding: 0 15px;
+            }
+        }
+        
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <h1 class="logo">Usina de Concreto Usinado Br</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html#inicio" class="nav-link">Início</a></li>
+                    <li><a href="index.html#sobre" class="nav-link">Sobre Nós</a></li>
+                    <li><a href="index.html#produtos" class="nav-link">Produtos</a></li>
+                    <li><a href="index.html#quem-somos" class="nav-link">Quem Somos</a></li>
+                    <li><a href="index.html#depoimentos" class="nav-link">Depoimentos</a></li>
+                    <li><a href="index.html#contato" class="nav-link">Contato</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Políticas Page -->
+    <section class="politicas-page">
+        <div class="politicas-container">
+            <a href="index.html" class="back-button fade-in">
+                <i class="fas fa-arrow-left"></i>
+                Voltar ao Site
+            </a>
+            
+            <div class="politicas-header fade-in">
+                <h1>Política de Privacidade</h1>
+                <div class="company-info">
+                    <strong>Usina de Concreto Usinado Br LTDA</strong><br>
+                    CNPJ: 60.599.096/0001-88
+                </div>
+                <div class="last-update">
+                    Última atualização: 02/05/2025
+                </div>
+            </div>
+            
+            <div class="politicas-content fade-in">
+                <h2>
+                    <span class="section-number">1</span>
+                    Compromisso com a Privacidade
+                </h2>
+                <p>A Usina de Concreto Usinado Br LTDA, com sede na Avenida Nossa Senhora do Ó, nº 865, Andar 2, Bairro Limão, São Paulo/SP, CEP 02715-000, reconhece a importância da privacidade e está comprometida em proteger os dados pessoais dos usuários do site https://representacaousinados.com, em conformidade com a Lei Geral de Proteção de Dados Pessoais (LGPD - Lei nº 13.709/2018).</p>
+
+                <h2>
+                    <span class="section-number">2</span>
+                    Quais Dados Coletamos
+                </h2>
+                <p>Coletamos dados de forma ética e transparente, como:</p>
+                <ul>
+                    <li>Nome, e-mail, telefone, e dados informados em formulários de contato;</li>
+                    <li>Endereço IP, tipo de navegador, localização aproximada, páginas visitadas e tempo de permanência;</li>
+                    <li>Informações comerciais fornecidas para atendimento, orçamento ou contratação de serviços.</li>
+                </ul>
+
+                <h2>
+                    <span class="section-number">3</span>
+                    Finalidade do Tratamento
+                </h2>
+                <p>Os dados coletados são utilizados para:</p>
+                <ul>
+                    <li>Entrar em contato mediante solicitação do usuário;</li>
+                    <li>Prestar atendimento comercial e operacional;</li>
+                    <li>Enviar comunicações institucionais ou promocionais (com consentimento);</li>
+                    <li>Aprimorar a experiência de navegação e desempenho do site;</li>
+                    <li>Cumprir obrigações legais e regulatórias.</li>
+                </ul>
+
+                <h2>
+                    <span class="section-number">4</span>
+                    Compartilhamento de Dados
+                </h2>
+                <p>Não comercializamos seus dados. Eles podem ser compartilhados apenas com:</p>
+                <ul>
+                    <li>Prestadores de serviço que atuem sob cláusulas de confidencialidade;</li>
+                    <li>Autoridades legais ou judiciais mediante solicitação formal.</li>
+                </ul>
+
+                <h2>
+                    <span class="section-number">5</span>
+                    Armazenamento e Segurança
+                </h2>
+                <p>Seus dados são armazenados em ambiente seguro, com:</p>
+                <ul>
+                    <li>Certificação SSL no site;</li>
+                    <li>Medidas técnicas contra acessos não autorizados;</li>
+                    <li>Restrições internas de acesso e controle;</li>
+                    <li>Backup periódico de informações.</li>
+                </ul>
+
+                <h2>
+                    <span class="section-number">6</span>
+                    Seus Direitos (Titular dos Dados)
+                </h2>
+                <p>Nos termos da LGPD, você tem o direito de:</p>
+                <ul>
+                    <li>Confirmar a existência de tratamento;</li>
+                    <li>Acessar, corrigir ou atualizar seus dados;</li>
+                    <li>Solicitar anonimização, bloqueio ou eliminação;</li>
+                    <li>Revogar consentimento;</li>
+                    <li>Solicitar a portabilidade;</li>
+                    <li>Apresentar reclamação à ANPD.</li>
+                </ul>
+
+                <div class="contact-info">
+                    <p><strong>Para exercer seus direitos, entre em contato com nosso Encarregado de Dados:</strong></p>
+                    <p><i class="fas fa-envelope"></i> contato@representacaousinados.com</p>
+                    <p><i class="fas fa-phone"></i> (11) 99806-1533 / (11) 99806-3315</p>
+                </div>
+
+                <h2>
+                    <span class="section-number">7</span>
+                    Uso de Cookies
+                </h2>
+                <p>Utilizamos cookies para:</p>
+                <ul>
+                    <li>Garantir o funcionamento adequado do site;</li>
+                    <li>Coletar dados estatísticos sobre acesso;</li>
+                    <li>Oferecer conteúdo personalizado, se autorizado.</li>
+                </ul>
+                <p>Você pode desativar os cookies a qualquer momento nas configurações do seu navegador.</p>
+
+                <h2>
+                    <span class="section-number">8</span>
+                    Links Externos
+                </h2>
+                <p>Nosso site pode conter links para outros sites, cujas políticas de privacidade não são de nossa responsabilidade. Recomendamos que você leia os termos desses sites antes de fornecer qualquer informação.</p>
+
+                <h2>
+                    <span class="section-number">9</span>
+                    Base Legal
+                </h2>
+                <p>Os dados são tratados com base em:</p>
+                <ul>
+                    <li>Consentimento do titular;</li>
+                    <li>Execução de contrato ou etapas preliminares;</li>
+                    <li>Cumprimento de obrigação legal ou regulatória;</li>
+                    <li>Legítimo interesse do controlador.</li>
+                </ul>
+
+                <h2>
+                    <span class="section-number">10</span>
+                    Retenção de Dados
+                </h2>
+                <p>Manteremos seus dados apenas pelo tempo necessário para cumprir as finalidades aqui descritas, respeitando prazos legais e regulatórios aplicáveis.</p>
+
+                <h2>
+                    <span class="section-number">11</span>
+                    Alterações na Política
+                </h2>
+                <p>Esta política poderá ser atualizada periodicamente. A versão mais recente sempre estará disponível no site.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Usina de Concreto Usinado Br</h3>
+                    <p>Fornecendo concreto usinado de qualidade superior para construção civil em São Paulo.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://wa.me/5511998061533" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html#inicio">Início</a></li>
+                        <li><a href="index.html#sobre">Sobre Nós</a></li>
+                        <li><a href="index.html#produtos">Produtos</a></li>
+                        <li><a href="index.html#contato">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Produtos</h4>
+                    <ul>
+                        <li><a href="index.html#produtos">Concreto Convencional</a></li>
+                        <li><a href="index.html#produtos">Concreto Bombeável</a></li>
+                        <li><a href="index.html#produtos">Concreto Estrutural</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Av. Nsra do O, 865 - Limão/SP</p>
+                    <p><i class="fas fa-phone"></i> (11) 99806-1533</p>
+                    <p><i class="fas fa-envelope"></i> leoniagomes@gmail.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-legal">
+                    <a href="politicas.html">Políticas de Privacidade</a>
+                    <a href="#termos">Termos de Uso</a>
+                </div>
+                <p>&copy; 2025 Usina de Concreto Usinado Br LTDA. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Scroll animations for the politicas page
+        document.addEventListener('DOMContentLoaded', function() {
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, observerOptions);
+
+            // Add fade-in animation to elements
+            const animateElements = document.querySelectorAll('.fade-in');
+            animateElements.forEach(el => {
+                observer.observe(el);
+            });
+
+            // Mobile menu functionality
+            const hamburger = document.querySelector('.hamburger');
+            const navMenu = document.querySelector('.nav-menu');
+            const navLinks = document.querySelectorAll('.nav-link');
+
+            if (hamburger && navMenu) {
+                hamburger.addEventListener('click', function() {
+                    hamburger.classList.toggle('active');
+                    navMenu.classList.toggle('active');
+                    
+                    const spans = hamburger.querySelectorAll('span');
+                    if (hamburger.classList.contains('active')) {
+                        spans[0].style.transform = 'rotate(-45deg) translate(-5px, 6px)';
+                        spans[1].style.opacity = '0';
+                        spans[2].style.transform = 'rotate(45deg) translate(-5px, -6px)';
+                    } else {
+                        spans[0].style.transform = 'none';
+                        spans[1].style.opacity = '1';
+                        spans[2].style.transform = 'none';
+                    }
+                });
+
+                navLinks.forEach(link => {
+                    link.addEventListener('click', function() {
+                        hamburger.classList.remove('active');
+                        navMenu.classList.remove('active');
+                        
+                        const spans = hamburger.querySelectorAll('span');
+                        spans[0].style.transform = 'none';
+                        spans[1].style.opacity = '1';
+                        spans[2].style.transform = 'none';
+                    });
+                });
+            }
+
+            // Header scroll effect
+            const header = document.querySelector('.header');
+            window.addEventListener('scroll', function() {
+                const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                
+                if (scrollTop > 100) {
+                    header.style.background = 'rgba(255, 255, 255, 0.98)';
+                    header.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.15)';
+                } else {
+                    header.style.background = 'rgba(255, 255, 255, 0.95)';
+                    header.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
